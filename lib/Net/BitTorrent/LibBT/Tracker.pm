@@ -18,7 +18,7 @@ our @ISA = qw(Exporter);
 # This allows declaration	use Net::BitTorrent::LibBT::Tracker ':all';
 # If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
 # will save memory.
-our $VERSION = '0.016';
+our $VERSION = '0.018';
 
 require XSLoader;
 XSLoader::load('Net::BitTorrent::LibBT::Tracker', $VERSION);
@@ -541,7 +541,7 @@ a tracker update.
 
 =head1 SEE ALSO
 
-L<Apache::ModBT>, L<http://www.crackerjack.net/mod_bt/>, Socket(3), perlfunc, L<IO::Socket::INET>
+L<Apache2::ModBT>, L<http://www.crackerjack.net/mod_bt/>, Socket(3), perlfunc, L<IO::Socket::INET>
 
 =head1 AUTHOR
 
@@ -552,7 +552,7 @@ Tyler 'Crackerjack' MacDonald, <tyler@yi.org>
 Copyright (C) 2006 by Tyler 'Crackerjack' MacDonald
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.4 or,
-at your option, any later version of Perl 5 you may have available.
+it under the terms of the Apache License 2.x
+(L<http://www.apache.org/licenses/LICENSE-2.0>).
 
 =cut
